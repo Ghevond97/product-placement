@@ -5,7 +5,7 @@ import img1 from '../images/img_1.jpg';
 class TIKA extends Component {
 
   componentDidMount() {
-    axios.get('http://localhost:8080/bridge/landing/active')
+    axios.get('http://localhost:8080/bridge/landing/activegett')
     .then(response => console.log(response))
   }
 
