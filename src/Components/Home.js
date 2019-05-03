@@ -1,144 +1,220 @@
 import React, { Component } from 'react';
-import '../App.css';
-import '../css/bootstrap/bootstrap.css';
-import '../css/bootstrap/bootstrap-grid.css';
-import '../css/bootstrap/bootstrap-reboot.css';
-import '../css/';
-
+import img1 from '../images/img_1.jpg';
 class Home extends Component {
   constructor(props) {
     super(props);
   }
   render() {
     return (
-      <div class="container-fluid photos">
-      <div class="row align-items-stretch">
+      <div className="site-wrap">
+      <div className="site-mobile-menu">
+        <div className="site-mobile-menu-header">
+          <div className="site-mobile-menu-close mt-3">
+            <span className="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div className="site-mobile-menu-body"></div>
+      </div>
+    
+      <div className="header-bar d-flex d-lg-block align-items-center" data-aos="fade-left">
+        <div className="site-logo">
+          <a href="index.html">Shutter</a>
+        </div>
         
-        <div class="col-6 col-md-6 col-lg-8" data-aos="fade-up">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_4.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
-            </div>
-            </div>
-          </a>
+        <div className="d-inline-block d-xl-none ml-md-0 ml-auto py-3" ><a href="#" className="site-menu-toggle js-menu-toggle text-white"><span className="icon-menu h3"></span></a></div>
+    
+        <div className="main-menu">
+          <ul className="js-clone-nav">
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="legal.html">Legal</a></li>
+          </ul>
+          <ul className="social js-clone-nav">
+            <li><a href="https://www.facebook.com" target="_blank"><span className="icon-facebook"></span></a></li>
+            <li><a href="https://www.instagram.com" target="_blank"><span className="icon-instagram"></span></a></li>
+          </ul>
         </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_5.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+      </div> 
+      <div className="main-content">
+        <div className="container-fluid photos">
+          <div className="row align-items-stretch">
+            
+            <div className="col-6 col-md-6 col-lg-8" data-aos="fade-up">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-8" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-
-        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_1.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_2.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_3.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-
-        
-
-        <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_6.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_7.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-
-
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_8.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_9.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
+            <div className="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+              <a href="single.html" className="d-block photo-item">
+                <img src={img1} alt="Image" className="img-fluid" />
+                <div className="photo-text-more">
+                  <div className="photo-text-more">
+                  <h3 className="heading">Photos Title Here</h3>
+                  <span className="meta">42 Photos</span>
+                </div>
+                </div>
+              </a>
             </div>
-          </a>
-        </div>
-        <div class="col-6 col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <a href="single.html" class="d-block photo-item">
-            <img src="images/img_10.jpg" alt="Image" class="img-fluid" />
-            <div class="photo-text-more">
-              <div class="photo-text-more">
-              <h3 class="heading">Photos Title Here</h3>
-              <span class="meta">42 Photos</span>
+    
+    
+          <div className="row justify-content-center">
+            <div className="col-md-12 text-center py-5">
             </div>
-            </div>
-          </a>
+          </div>
         </div>
       </div>
-
-      <div class="row justify-content-center">
-        <div class="col-md-12 text-center py-5">
-          <p>
-            All rights reserved
-          </p>
-        </div>
-      </div>
+    </div> 
     </div>
-
     )
   }
 }
