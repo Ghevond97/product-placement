@@ -12,6 +12,7 @@ import './css/style.css';
 
 import Home from './Components/Home'
 import TIKA from './Components/TIKA';
+import Quiz from './Components/Quiz';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
       // <Routes />
       // <Home />
       <TIKA />
+      // <Quiz />
     );
   }
 }

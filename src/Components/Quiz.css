@@ -1,0 +1,31 @@
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+
+.quiz-title {
+  padding-bottom: 3%;
+}
+
+.quiz-question {
+  display: flex;
+  flex-direction: column;
+}
+
+.quiz-question-answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.answer-option {
+  display: flex;
+  align-items: center;
+}
+
+.answer-content {
+  padding-left: 5%;
+}

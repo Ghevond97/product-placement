@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import img1 from '../images/img_1.jpg';
+import Quiz from './Quiz';
+import Response from './Response';
 
 class TIKA extends Component {
   constructor(props) {
@@ -10,18 +12,17 @@ class TIKA extends Component {
     };
   }
 
-  componentDidMount() {
-    const { landingContent } = this.state;
-    let data = null;
-    axios
-      .get('http://localhost:8080/bridge/landing/active')
-      //  .then(response =>this.setState({landingContent: response.data}))
-      .then(response => {
-        const data = response.data;
-        console.log('DATA', data);
-        this.setState({ landingContent: data });
-      });
-  }
+  // componentDidMount() {
+  //   const { landingContent } = this.state;
+  //   axios
+  //     .get('http://0.0.0.0:8080/bridge/landing/active')
+  //     //  .then(response =>this.setState({landingContent: response.data}))
+  //     .then(response => {
+  //       const data = response.data;
+  //       console.log('DATA', data);
+  //       this.setState({ landingContent: data });
+  //     });
+  // }
 
   render() {
     const { landingContent } = this.state;
@@ -92,7 +93,7 @@ class TIKA extends Component {
         </header>
         <main className="main-content">
           <div className="container-fluid photos">
-            <div className="row align-items-stretch">
+            {/* <div className="row align-items-stretch">
               {landingContent
                 ? landingContent.map(content => (
                     <div
@@ -111,7 +112,9 @@ class TIKA extends Component {
                     </div>
                   ))
                 : ''}
-            </div>
+            </div> */}
+            {/* <Quiz /> */}
+            <Response />
 
             <div className="row justify-content-center">
               <div className="col-md-12 text-center py-5" />
